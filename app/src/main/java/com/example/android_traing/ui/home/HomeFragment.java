@@ -90,24 +90,27 @@ public class HomeFragment extends Fragment {
 //        测试时注释下面两行代码
         getAdList();
         getNewsList();
-
         LinearLayout linearLayout_python = headerView.findViewById(R.id.linearLayout_python);
-        linearLayout_python.setOnClickListener(v -> Navigation.findNavController(v)
+        linearLayout_python.setOnClickListener(v ->Navigation.findNavController(v)
                 .navigate(R.id.action_navigation_home_to_pythonFragment));
-
         homeAdapter.setOnItemClickListener((adapter, view, position) -> {
             Bundle bundle=new Bundle();
             bundle.putString("url",homeAdapter.getData().get(position).getNewsUrl());
             Navigation.findNavController(view).navigate(R.id.action_navigation_home_to_webFragment,
                     bundle);
         });
-
         return root;
     }
 
     private void getAdList() {
         homeViewModel.getAdList().observe(getViewLifecycleOwner(), newsBeans -> {
             banner.setAdapter(new ImageTitleNumAdapter(newsBeans));
+            banner.setOnBannerListener((data, position) -> {
+                Bundle bundle = new Bundle();
+                bundle.putString("url", ((NewsBean)data).getNewsUrl());
+                Navigation.findNavController(banner).navigate(R.id.action_navigation_home_to_webFragment,
+                        bundle);
+            });
         });
     }
 

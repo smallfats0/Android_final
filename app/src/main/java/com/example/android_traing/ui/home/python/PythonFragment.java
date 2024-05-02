@@ -18,8 +18,9 @@ import android.view.ViewGroup;
 
 import com.example.android_traing.R;
 import com.example.android_traing.adapter.PythonAdapter;
+import com.example.android_traing.base.BaseFragment2;
 
-public class PythonFragment extends Fragment {
+public class PythonFragment extends BaseFragment2 {
 
 
 
@@ -31,10 +32,10 @@ public class PythonFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.addItemDecoration(new DividerItemDecoration(root.getContext(),
                 DividerItemDecoration.VERTICAL));
-        PythonAdapter pythonAdapter = new PythonAdapter(null);
+        PythonAdapter pythonAdapter=new PythonAdapter(null);
         recyclerView.setAdapter(pythonAdapter);
-        PythonViewModel pythonViewModel = new ViewModelProvider(this).get(PythonViewModel.class);
-        pythonViewModel.getPythonList().observe(getViewLifecycleOwner(), pythonAdapter :: setList);
+        PythonViewModel mViewModel = new ViewModelProvider(this).get(PythonViewModel.class);
+        mViewModel.getPythonList().observe(getViewLifecycleOwner(), pythonAdapter::setList);
         return root;
     }
 
