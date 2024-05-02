@@ -63,4 +63,10 @@ dependencies {
     implementation("io.github.youth5201314:banner:2.2.3")
     // web
     implementation("io.github.justson:agentweb-core:v5.1.1-androidx")
+
+    // 爆炸菜单
+    implementation("com.nightonke:boommenu:2.1.1")
+    // 图标
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+
 }

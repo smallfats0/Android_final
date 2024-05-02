@@ -9,8 +9,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.Navigation;
 
+import com.example.android_traing.R;
+import com.example.android_traing.bean.BoomMenuitemBean;
 import com.example.android_traing.databinding.FragmentChartBinding;
+import com.nightonke.boommenu.BoomButtons.TextInsideCircleButton;
+import com.nightonke.boommenu.BoomMenuButton;
 
 public class ChartFragment extends Fragment {
 
@@ -23,9 +28,29 @@ public class ChartFragment extends Fragment {
 
         binding = FragmentChartBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+        BoomMenuButton bmb = root.findViewById(R.id.bmb);
+        chartViewModel.getBoomMenuItemList().observe(getViewLifecycleOwner(), boomMenuitemBeans -> {
+            for(BoomMenuitemBean boomMenuitemBean:boomMenuitemBeans){
+                TextInsideCircleButton.Builder builer = new TextInsideCircleButton.Builder();
+                builer.normalText(boomMenuitemBean.getTitle())
+                        .normalImageRes(boomMenuitemBean.getImageid())
+                        .listener(index -> {
+                            switch (index){
+                                case 0:
+                                    Navigation.findNavController(root).navigate(R.id.action_navigation_chart_to_lineFragment);
+                                    break;
+                                case 1:
+                                    Navigation.findNavController(root).navigate(R.id.action_navigation_chart_to_barFragment);
+                                    break;
+                                case 2:
+                                    Navigation.findNavController(root).navigate(R.id.action_navigation_chart_to_pieFragment);
+                                    break;
 
-        final TextView textView = binding.textChart;
-        chartViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+                            }
+                        });
+                bmb.addBuilder(builer);
+            }
+        });
         return root;
     }
 

@@ -4,19 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.chart.ChartFragment">
+    tools:context=".ui.chart.ChartFragment"
+    android:background="@drawable/count_bg">
 
-    <TextView
-        android:id="@+id/text_Chart"
-        android:layout_width="match_parent"
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:bmb_buttonEnum="textInsideCircle"
+
+        app:bmb_piecePlaceEnum="piecePlace_dot_9_3"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_9_3"
+
+        />
+<!--  app:bmb_piecePlaceEnum="piecePlace_dot_9_3" 前者为数量，后者为样式  -->
 </androidx.constraintlayout.widget.ConstraintLayout>
