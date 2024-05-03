@@ -13,6 +13,9 @@ import com.example.android_traing.R;
 
 public class VideoListFragment extends Fragment {
 
+    public VideoListFragment(String[] list) {
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

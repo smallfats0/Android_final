@@ -5,6 +5,8 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -18,6 +20,8 @@ import com.bumptech.glide.Glide;
 import com.example.android_traing.R;
 import com.example.android_traing.base.BaseFragment2;
 import com.example.android_traing.utils.NetUtils;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 import com.shuyu.gsyvideoplayer.GSYVideoManager;
 import com.shuyu.gsyvideoplayer.builder.GSYVideoOptionBuilder;
 import com.shuyu.gsyvideoplayer.listener.GSYSampleCallBack;
@@ -33,7 +37,7 @@ public class VideoDetailFragment extends BaseFragment2 { StandardGSYVideoPlayer 
 
     private boolean isPlay;
     private boolean isPause;
-    private String url = "http://7xjmzj.com1.z0.glb.clouddn.com/20171026175005_JObCxCE2.mp4";
+    private String url = "https://vt1.doubanio.com/202405031404/d532d64c84b7a80fb68b0f511a1f9517/view/movie/M/703140793.mp4";
 
     private OrientationUtils orientationUtils;
     private GSYVideoOptionBuilder gsyVideoOption;
@@ -118,6 +122,34 @@ public class VideoDetailFragment extends BaseFragment2 { StandardGSYVideoPlayer 
 
             List<Fragment> fragmentList = new ArrayList<>();
             fragmentList.add(new VideoIntroFragment(intro));
+            fragmentList.add(new VideoListFragment(list));
+            TabLayout tableLayout = root.findViewById(R.id.tabLayout);
+            ViewPager2 viewPager2 = root.findViewById(R.id.viewPager2);
+            viewPager2.setAdapter(new FragmentStateAdapter(this) {
+                @NonNull
+                @Override
+                public Fragment createFragment(int position) {
+                    return fragmentList.get(position);
+                }
+
+                @Override
+                public int getItemCount() {
+                    return fragmentList.size();
+                }
+            });
+            TabLayoutMediator tabLayoutMediator = new TabLayoutMediator(tableLayout, viewPager2,
+                    (tab, position) -> {
+                        switch (position){
+                            case 0:
+                                tab.setText("视频简介");
+                                break;
+                            case 1:
+                                tab.setText("视频列表");
+                                break;
+                        }
+                    });
+            tabLayoutMediator.attach();
+
         }
         return root;
     }
