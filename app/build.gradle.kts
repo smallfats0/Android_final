@@ -12,7 +12,7 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
+        multiDexEnabled = true
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -68,5 +68,9 @@ dependencies {
     implementation("com.nightonke:boommenu:2.1.1")
     // 图标
     implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+    // 视频播放器
+    implementation("com.github.CarGuo.GSYVideoPlayer:GSYVideoPlayer:v8.6.0-release-jitpack")
+
+    implementation ("androidx.multidex:multidex:2.0.1")
 
 }
