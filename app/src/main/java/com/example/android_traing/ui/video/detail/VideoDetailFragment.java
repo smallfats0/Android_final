@@ -37,7 +37,7 @@ public class VideoDetailFragment extends BaseFragment2 { StandardGSYVideoPlayer 
 
     private boolean isPlay;
     private boolean isPause;
-    private String url = "https://vt1.doubanio.com/202405031404/d532d64c84b7a80fb68b0f511a1f9517/view/movie/M/703140793.mp4";
+    private String url = "https://vt1.doubanio.com/202405070834/9f0eeecd15565498ba5c4e6a5b08e192/view/movie/M/703140793.mp4";
 
     private OrientationUtils orientationUtils;
     private GSYVideoOptionBuilder gsyVideoOption;
@@ -47,10 +47,11 @@ public class VideoDetailFragment extends BaseFragment2 { StandardGSYVideoPlayer 
         View root = inflater.inflate(R.layout.fragment_video_detail, container, false);
         Bundle arguments = getArguments();
         if (arguments != null) {
+            String image = arguments.getString("image");
             String name = arguments.getString("name");
             String intro = arguments.getString("intro");
             String[] list = arguments.getStringArray("list");
-            String[] image = arguments.getStringArray("image");
+
             detailPlayer = root.findViewById(R.id.detail_player);
 
             //增加封面
@@ -122,7 +123,7 @@ public class VideoDetailFragment extends BaseFragment2 { StandardGSYVideoPlayer 
 
             List<Fragment> fragmentList = new ArrayList<>();
             fragmentList.add(new VideoIntroFragment(intro));
-            fragmentList.add(new VideoListFragment(list));
+            fragmentList.add(new VideoListFragment(list,this));
             TabLayout tableLayout = root.findViewById(R.id.tabLayout);
             ViewPager2 viewPager2 = root.findViewById(R.id.viewPager2);
             viewPager2.setAdapter(new FragmentStateAdapter(this) {
@@ -139,17 +140,13 @@ public class VideoDetailFragment extends BaseFragment2 { StandardGSYVideoPlayer 
             });
             TabLayoutMediator tabLayoutMediator = new TabLayoutMediator(tableLayout, viewPager2,
                     (tab, position) -> {
-                        switch (position){
-                            case 0:
-                                tab.setText("视频简介");
-                                break;
-                            case 1:
-                                tab.setText("视频列表");
-                                break;
+                        if (position == 0) {
+                            tab.setText("视频简介");
+                        } else {
+                            tab.setText("视频列表");
                         }
                     });
             tabLayoutMediator.attach();
-
         }
         return root;
     }

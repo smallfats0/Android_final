@@ -67,19 +67,19 @@ public class VideoBean {
         private String video_id;
         private String video_name;
 
-        public String getVideo_id() {
+        public String getVideoId() {
             return video_id;
         }
 
-        public void setVideo_id(String video_id) {
+        public void setVideoId(String video_id) {
             this.video_id = video_id;
         }
 
-        public String getVideo_name() {
+        public String getVideoName() {
             return video_name;
         }
 
-        public void setVideo_name(String video_name) {
+        public void setVideoName(String video_name) {
             this.video_name = video_name;
         }
     }

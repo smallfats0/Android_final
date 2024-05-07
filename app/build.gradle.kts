@@ -73,4 +73,15 @@ dependencies {
 
     implementation ("androidx.multidex:multidex:2.0.1")
 
+    // 圆形图片
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+
+    //  bmob
+    implementation ("io.github.bmob:android-sdk:3.9.4")
+    implementation ("io.reactivex.rxjava2:rxjava:2.2.8")
+    implementation ("io.reactivex.rxjava2:rxandroid:2.1.1")
+    implementation ("com.squareup.okhttp3:okhttp:4.8.1")
+    implementation ("com.squareup.okio:okio:2.2.2")
+    implementation ("com.google.code.gson:gson:2.8.5")
+
 }

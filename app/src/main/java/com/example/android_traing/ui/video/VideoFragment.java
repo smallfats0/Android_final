@@ -56,26 +56,25 @@ public class VideoFragment extends Fragment {
                 Toast.makeText(getContext(), "没有更多数据了", Toast.LENGTH_SHORT).show();
             }
         });
-        getVideoList();
         RecyclerView recyclerView = root.findViewById(R.id.recyclerView);
-        videoAdapter = new VideoAdapter(null);
+        videoAdapter=new VideoAdapter(null);
         recyclerView.setAdapter(videoAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         videoAdapter.setOnItemClickListener((adapter, view, position) -> {
-            Bundle bundle = new Bundle();
-            VideoBean videoBean = (VideoBean) adapter.getData().get(position);
-            bundle.putString("image", videoBean.getImg());
-            bundle.putString("name", videoBean.getName());
-            bundle.putString("intro", videoBean.getIntro());
+            VideoBean videoBean = videoAdapter.getData().get(position);
+            Bundle bundle=new Bundle();
+            bundle.putString("image",videoBean.getImg());
+            bundle.putString("name",videoBean.getName());
+            bundle.putString("intro",videoBean.getIntro());
             List<String> list=new ArrayList<>();
             for (VideoBean.VideoDetailListBean videoDetailListBean:videoBean.getVideoDetailList()) {
-                list.add(videoDetailListBean.getVideo_name());
+                list.add(videoDetailListBean.getVideoName());
             }
             bundle.putStringArray("list",list.toArray(new String[0]));
-
             Navigation.findNavController(root).navigate(
-                    R.id.action_navigation_video_to_videoDetailFragment);
+                    R.id.action_navigation_video_to_videoDetailFragment,bundle);
         });
+        getVideoList();
         return root;
     }
 
@@ -85,8 +84,5 @@ public class VideoFragment extends Fragment {
         });
     }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-    }
+
 }
