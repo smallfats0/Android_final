@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.android_traing"
+    namespace = "com.example.android_cjj118"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.android_traing"
+        applicationId = "com.example.android_cjj118"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

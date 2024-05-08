@@ -1,11 +1,11 @@
-Index: app/src/main/java/com/example/android_traing/ui/video/detail/VideoDetailFragment.java
+Index: app/src/main/java/com/example/android_cjj118/ui/video/detail/VideoDetailFragment.java
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
-diff --git a/app/src/main/java/com/example/android_traing/ui/video/detail/VideoDetailFragment.java b/app/src/main/java/com/example/android_traing/ui/video/detail/VideoDetailFragment.java
---- a/app/src/main/java/com/example/android_traing/ui/video/detail/VideoDetailFragment.java	
-+++ b/app/src/main/java/com/example/android_traing/ui/video/detail/VideoDetailFragment.java	(date 1714718221162)
+diff --git a/app/src/main/java/com/example/android_cjj118/ui/video/detail/VideoDetailFragment.java b/app/src/main/java/com/example/android_cjj118/ui/video/detail/VideoDetailFragment.java
+--- a/app/src/main/java/com/example/android_cjj118/ui/video/detail/VideoDetailFragment.java	
++++ b/app/src/main/java/com/example/android_cjj118/ui/video/detail/VideoDetailFragment.java	(date 1714718221162)
 @@ -33,7 +33,7 @@
  
      private boolean isPlay;
