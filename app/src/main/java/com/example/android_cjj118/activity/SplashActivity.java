@@ -26,15 +26,14 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         ImageView imageView = findViewById(R.id.imageView);
-        Glide.with(this).load("http://5b0988e595225.cdn.sohucs.com/images/" +
-                "20190831/05de49d16e374e9e997bc97fdf29b0cc.gif").into(imageView);
+        Glide.with(this).load("https://cdn.pixabay.com/animation/2023/07/13/17/33/17-33-04-975_512.gif").into(imageView);
         new Handler().postDelayed(() ->{
             if(!isSkip && !isBack){
                 Intent intent = new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
-        },5000);
+        },9000);
     }
 
     public void skip(View view) {

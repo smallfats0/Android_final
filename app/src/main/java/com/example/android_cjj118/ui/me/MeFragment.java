@@ -41,6 +41,10 @@ public class MeFragment extends Fragment {
             textView.setText("点击登录");
             isLogin=false;
         }
+        // 点击地图跳转
+        LinearLayout linearLayout = root.findViewById(R.id.linearLayout_map);
+        linearLayout.setOnClickListener(v->Navigation.findNavController(v).
+                navigate(R.id.action_navigation_me_to_mapFragment));
         return root;
     }
 

@@ -55,6 +55,9 @@
         <action
             android:id="@+id/action_navigation_me_to_infoFragment"
             app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/action_navigation_me_to_mapFragment"
+            app:destination="@id/mapFragment" />
     </fragment>
     <fragment
         android:id="@+id/pythonFragment"
@@ -130,4 +133,9 @@
         android:name="com.example.android_cjj118.ui.me.user.findPasswordFragment"
         android:label="fragment_find_password"
         tools:layout="@layout/fragment_find_password" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.android_cjj118.ui.me.map.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
 </navigation>

@@ -22,10 +22,10 @@ import java.util.List;
 public class VideoListFragment extends Fragment {
     private List<String> list;
     private VideoDetailFragment videoDetailFragment;
-    private String url0="https://vt1.doubanio.com/202405070841/f72a4090aa861f823fe11a462aa8ef92/view/movie/M/703150735.mp4";
-    private String url1="https://vt1.doubanio.com/202405070842/3ac67ef578dd014d09ad7cfba974c367/view/movie/M/703150733.mp4";
-    private String url2="https://vt1.doubanio.com/202405070844/6f4afecb64441f4058871646b332672f/view/movie/M/703150787.mp4";
-    private String url3="https://vt1.doubanio.com/202405070843/c2b9b37e482cf4de0ae13dd01646f604/view/movie/M/703150051.mp4";
+    private String url0="https://vt1.doubanio.com/202405081118/3d3108789c52f3f92752da5647e9ad6b/view/movie/M/703140719.mp4";
+    private String url1="https://vt1.doubanio.com/202405081118/5fe62f9f074d5ea671bdf37a37ccfa66/view/movie/M/703140769.mp4";
+    private String url2="https://vt1.doubanio.com/202405081118/90090e066fe27fa48b47a4dd0e3d9715/view/movie/M/703140768.mp4";
+    private String url3="https://vt1.doubanio.com/202405081119/823142fd88d8a15ed50bee484d3d7315/view/movie/M/703140606.mp4";
     public VideoListFragment(String[] list,VideoDetailFragment videoDetailFragment) {
         this.list = Arrays.asList(list);
         this.videoDetailFragment = videoDetailFragment;
