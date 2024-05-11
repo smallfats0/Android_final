@@ -45,6 +45,12 @@ public class MeFragment extends Fragment {
         LinearLayout linearLayout = root.findViewById(R.id.linearLayout_map);
         linearLayout.setOnClickListener(v->Navigation.findNavController(v).
                 navigate(R.id.action_navigation_me_to_mapFragment));
+
+        //从 我的 的界面跳转到 星座 界面
+        LinearLayout linearLayout_constellation = root.findViewById(R.id.linearLayout_c);
+        linearLayout_constellation.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.action_navigation_me_to_constenllationFragment);
+        });
         return root;
     }
 

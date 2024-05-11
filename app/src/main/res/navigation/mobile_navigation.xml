@@ -58,6 +58,9 @@
         <action
             android:id="@+id/action_navigation_me_to_mapFragment"
             app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_navigation_me_to_constenllationFragment"
+            app:destination="@id/constenllationFragment" />
     </fragment>
     <fragment
         android:id="@+id/pythonFragment"
@@ -138,4 +141,9 @@
         android:name="com.example.android_cjj118.ui.me.map.MapFragment"
         android:label="fragment_map"
         tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/constenllationFragment"
+        android:name="com.example.android_cjj118.ui.me.Constenllation.ConstenllationFragment"
+        android:label="fragment_constenllation"
+        tools:layout="@layout/fragment_constenllation" />
 </navigation>

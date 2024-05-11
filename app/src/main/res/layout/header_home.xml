@@ -10,6 +10,12 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"/>
 
+    <!-- 添加分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@android:color/darker_gray"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,12 +32,14 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/android_icon" />
+                app:srcCompat="@drawable/dlr" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Android学科" />
+                android:text="大六壬"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
         </LinearLayout>
 
         <LinearLayout
@@ -44,12 +52,14 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/java_icon" />
+                app:srcCompat="@drawable/qm" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Java学科" />
+                android:text="转盘奇门"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
         </LinearLayout>
 
         <LinearLayout
@@ -62,12 +72,14 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/php_icon" />
+                app:srcCompat="@drawable/ming" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PHP学科" />
+                android:text="四柱八字"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
         </LinearLayout>
 
         <LinearLayout
@@ -81,12 +93,20 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/python_icon" />
+                app:srcCompat="@drawable/qzsy" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Python学科" />
+                android:text="七政四余"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
         </LinearLayout>
     </LinearLayout>
+
+    <!-- 添加分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"/>
 </LinearLayout>

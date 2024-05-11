@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="新闻标题"
-        android:textColor="#25b1f3"
+        android:textColor="#000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -59,4 +59,13 @@
         android:text="新闻类型"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <!-- 水平分割线 -->
+    <View
+        android:id="@+id/horizontalDivider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D3D3D3"
+        app:layout_constraintTop_toBottomOf="@id/textView2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

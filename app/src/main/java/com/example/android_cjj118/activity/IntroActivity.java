@@ -16,22 +16,22 @@ public class IntroActivity extends AppIntro {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addSlide(AppIntroFragment.createInstance("第一日",
-                "启动页、引导页、闪屏页与基础框架搭建", R.drawable.p1, android.R.color.black));
-        addSlide(AppIntroFragment.createInstance("第二日",
-                "LiveData+Retrofit网络请求与下拉刷新SmartRefreshLayout", R.drawable.p2, android.R.color.black));
-        addSlide(AppIntroFragment.createInstance("第三日",
-                "RecyclerAdapter框架与轮播图banner", R.drawable.p3, android.R.color.black));
-        addSlide(AppIntroFragment.createInstance("第四日",
-                "新闻详情页AgentWeb与Python详情页", R.drawable.p4, android.R.color.black));
-        addSlide(AppIntroFragment.createInstance("第五日",
-                "爆炸菜单BoomMenu与统计图表MPAndroidChart", R.drawable.p5, android.R.color.black));
-        addSlide(AppIntroFragment.createInstance("第六日",
-                "视频列表与视频播放器GSYVideoPlayer", R.drawable.p6, android.R.color.black));
-        addSlide(AppIntroFragment.createInstance("第七日",
-                "我的界面与基于Bmob后端云的登录注册，找回密码", R.drawable.p7, android.R.color.black));
-        addSlide(AppIntroFragment.createInstance("第八日",
-                "百度地图API", R.drawable.p8, android.R.color.black));
+        addSlide(AppIntroFragment.createInstance("乾为天",
+                "天行健，君子以自强不息。", R.drawable.p1, android.R.color.black));
+        addSlide(AppIntroFragment.createInstance("兑为泽",
+                "丽泽，兑。君子以朋友讲习。", R.drawable.p2, android.R.color.black));
+        addSlide(AppIntroFragment.createInstance("离为火",
+                "明两作，离。大人以继明照四方。", R.drawable.p3, android.R.color.black));
+        addSlide(AppIntroFragment.createInstance("震为雷",
+                "洊雷，震。君子以恐惧修省。", R.drawable.p4, android.R.color.black));
+        addSlide(AppIntroFragment.createInstance("巽为风",
+                "随风，巽。君子以申命行事。", R.drawable.p5, android.R.color.black));
+        addSlide(AppIntroFragment.createInstance("坎为水",
+                "水洊至，习坎。君子以常德行，习教事。", R.drawable.p6, android.R.color.black));
+        addSlide(AppIntroFragment.createInstance("艮为山",
+                "兼山，艮。君子以思不出其位。", R.drawable.p7, android.R.color.black));
+        addSlide(AppIntroFragment.createInstance("坤为地",
+                "地势坤，君子以厚德载物。", R.drawable.p8, android.R.color.black));
         setSkipText("跳过");
         setDoneText("完成");
 

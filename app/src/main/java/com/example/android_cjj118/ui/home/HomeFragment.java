@@ -73,7 +73,7 @@ public class HomeFragment extends Fragment {
 
         List<Integer> list = new ArrayList<>();
         for(int i = 0;i<3;i++){
-            list.add(R.drawable.pic_item_list_default);
+            list.add(R.drawable.error);
         }
         banner.setAdapter(new ImageAdapter(list));
 

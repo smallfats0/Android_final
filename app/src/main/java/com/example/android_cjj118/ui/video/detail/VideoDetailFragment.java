@@ -37,7 +37,7 @@ public class VideoDetailFragment extends BaseFragment2 { StandardGSYVideoPlayer 
 
     private boolean isPlay;
     private boolean isPause;
-    private String url = "https://vt1.doubanio.com/202405081109/74329af8da6953a7a47bda46495941dd/view/movie/M/703140793.mp4";
+    private String url = "https://vd3.bdstatic.com/mda-nm094r3t3hcqa2g7/hd/cae_h264/1669876815415110966/mda-nm094r3t3hcqa2g7.mp4";
 
     private OrientationUtils orientationUtils;
     private GSYVideoOptionBuilder gsyVideoOption;

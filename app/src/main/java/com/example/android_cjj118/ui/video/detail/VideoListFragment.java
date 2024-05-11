@@ -22,10 +22,11 @@ import java.util.List;
 public class VideoListFragment extends Fragment {
     private List<String> list;
     private VideoDetailFragment videoDetailFragment;
-    private String url0="https://vt1.doubanio.com/202405081118/3d3108789c52f3f92752da5647e9ad6b/view/movie/M/703140719.mp4";
-    private String url1="https://vt1.doubanio.com/202405081118/5fe62f9f074d5ea671bdf37a37ccfa66/view/movie/M/703140769.mp4";
-    private String url2="https://vt1.doubanio.com/202405081118/90090e066fe27fa48b47a4dd0e3d9715/view/movie/M/703140768.mp4";
-    private String url3="https://vt1.doubanio.com/202405081119/823142fd88d8a15ed50bee484d3d7315/view/movie/M/703140606.mp4";
+    private String url0="https://vd3.bdstatic.com/mda-mgmrsyu6ck4p521p/hd/cae_h264/1626998511442986356/mda-mgmrsyu6ck4p521p.mp4";
+    private String url1="https://vd3.bdstatic.com/mda-nhnfy3qn810yh98h/576p/h264/1661253451137588795/mda-nhnfy3qn810yh98h.mp4";
+    private String url2="https://vd3.bdstatic.com/mda-pggm42xnneg614f2/576p/h264/1689605721557377864/mda-pggm42xnneg614f2.mp4";
+    private String url3="https://vd3.bdstatic.com/mda-nh4me7s3jvg4df5y/576p/h264/1659712595400074050/mda-nh4me7s3jvg4df5y.mp4";
+    private String url4="https://vd3.bdstatic.com/mda-qckday1hugpfwr6e/576p/h264/1711013172106373013/mda-qckday1hugpfwr6e.mp4";
     public VideoListFragment(String[] list,VideoDetailFragment videoDetailFragment) {
         this.list = Arrays.asList(list);
         this.videoDetailFragment = videoDetailFragment;
@@ -42,10 +43,16 @@ public class VideoListFragment extends Fragment {
         videoListAdapter videoListAdapter = new videoListAdapter(list);
         recyclerView.setAdapter(videoListAdapter);
         videoListAdapter.setOnItemClickListener((adapter, view, position) -> {
-            if (position%2==0)
+            if (position%5==0)
                 videoDetailFragment.playNewUrl(url0);
-            else
+            else if (position%5==1)
                 videoDetailFragment.playNewUrl(url1);
+            else if (position%5==2)
+                videoDetailFragment.playNewUrl(url2);
+            else if (position%5==3)
+                videoDetailFragment.playNewUrl(url3);
+            else if (position%5==4)
+                videoDetailFragment.playNewUrl(url4);
         });
         return root;
     }
