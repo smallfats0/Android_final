@@ -90,9 +90,16 @@ public class HomeFragment extends Fragment {
 //        测试时注释下面两行代码
         getAdList();
         getNewsList();
+        //       跳转到python页面
         LinearLayout linearLayout_python = headerView.findViewById(R.id.linearLayout_python);
         linearLayout_python.setOnClickListener(v ->Navigation.findNavController(v)
                 .navigate(R.id.action_navigation_home_to_pythonFragment));
+
+        // 跳转符咒
+        LinearLayout linearLayout_fuzhou = headerView.findViewById(R.id.linearLayout_fuzhou);
+        linearLayout_fuzhou.setOnClickListener(v ->Navigation.findNavController(v)
+                .navigate(R.id.action_navigation_home_to_fzFragment));
+
         homeAdapter.setOnItemClickListener((adapter, view, position) -> {
             Bundle bundle=new Bundle();
             bundle.putString("url",homeAdapter.getData().get(position).getNewsUrl());
