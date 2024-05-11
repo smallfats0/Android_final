@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.chart.ChartFragment"
-    android:background="@drawable/count_bg">
+    android:background="@drawable/chart_bg">
 
     <com.nightonke.boommenu.BoomMenuButton
         android:id="@+id/bmb"
@@ -16,10 +16,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:bmb_buttonEnum="textInsideCircle"
-
         app:bmb_piecePlaceEnum="piecePlace_dot_9_3"
         app:bmb_buttonPlaceEnum="buttonPlace_sc_9_3"
-
+        app:bmb_normalColor="#fdfbfe"
         />
 <!--  app:bmb_piecePlaceEnum="piecePlace_dot_9_3" 前者为数量，后者为样式  -->
 </androidx.constraintlayout.widget.ConstraintLayout>

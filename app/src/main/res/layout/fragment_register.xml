@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     android:gravity="center"
     android:orientation="vertical"
+    android:background="@drawable/login_bg"
     tools:context=".ui.me.user.LoginFragment">
 
     <de.hdodenhof.circleimageview.CircleImageView

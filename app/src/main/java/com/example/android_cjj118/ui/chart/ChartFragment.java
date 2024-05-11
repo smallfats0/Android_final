@@ -37,15 +37,47 @@ public class ChartFragment extends Fragment {
                         .listener(index -> {
                             switch (index){
                                 case 0:
-                                    Navigation.findNavController(root).navigate(R.id.action_navigation_chart_to_lineFragment);
+                                    Navigation.findNavController(root).navigate(
+                                            R.id.action_navigation_chart_to_lineFragment);
                                     break;
                                 case 1:
-                                    Navigation.findNavController(root).navigate(R.id.action_navigation_chart_to_barFragment);
+                                    Navigation.findNavController(root).navigate(
+                                            R.id.action_navigation_chart_to_barFragment);
                                     break;
                                 case 2:
-                                    Navigation.findNavController(root).navigate(R.id.action_navigation_chart_to_pieFragment);
+                                    Navigation.findNavController(root).navigate(
+                                            R.id.action_navigation_chart_to_pieFragment);
                                     break;
-
+                                case 3:
+                                    //实心饼图
+                                    Navigation.findNavController(root).navigate(
+                                            R.id.action_navigation_chart_to_pie2Fragment);
+                                    break;
+                                case 4:
+                                    //气泡图
+                                    Navigation.findNavController(root).navigate(
+                                            R.id.action_navigation_chart_to_bubbleFragment);
+                                    break;
+                                case 5:
+                                    //蜡烛图
+                                    Navigation.findNavController(root).navigate(
+                                            R.id.action_navigation_chart_to_candleFragment);
+                                    break;
+                                case 6:
+                                    //曲线折线图
+                                    Navigation.findNavController(root).navigate(
+                                            R.id.action_navigation_chart_to_line2Fragment);
+                                    break;
+                                case 7:
+                                    ///水平柱状图
+                                    Navigation.findNavController(root).navigate(
+                                            R.id.action_navigation_chart_to_horizontalBarFragment2);
+                                    break;
+                                case 8:
+                                    //雷达图
+                                    Navigation.findNavController(root).navigate(
+                                            R.id.action_navigation_chart_to_radarFragment);
+                                    break;
                             }
                         });
                 bmb.addBuilder(builer);

@@ -32,6 +32,24 @@
         <action
             android:id="@+id/action_navigation_chart_to_pieFragment"
             app:destination="@id/pieFragment" />
+        <action
+            android:id="@+id/action_navigation_chart_to_bubbleFragment"
+            app:destination="@id/bubbleFragment" />
+        <action
+            android:id="@+id/action_navigation_chart_to_pie2Fragment"
+            app:destination="@id/pie2Fragment" />
+        <action
+            android:id="@+id/action_navigation_chart_to_candleFragment"
+            app:destination="@id/candleFragment" />
+        <action
+            android:id="@+id/action_navigation_chart_to_line2Fragment"
+            app:destination="@id/line2Fragment" />
+        <action
+            android:id="@+id/action_navigation_chart_to_horizontalBarFragment2"
+            app:destination="@id/horizontalBarFragment" />
+        <action
+            android:id="@+id/action_navigation_chart_to_radarFragment"
+            app:destination="@id/radarFragment" />
     </fragment>
 
     <fragment
@@ -146,4 +164,34 @@
         android:name="com.example.android_cjj118.ui.me.Constenllation.ConstenllationFragment"
         android:label="fragment_constenllation"
         tools:layout="@layout/fragment_constenllation" />
+    <fragment
+        android:id="@+id/bubbleFragment"
+        android:name="com.example.android_cjj118.ui.chart.bubble.BubbleFragment"
+        android:label="fragment_bubble"
+        tools:layout="@layout/fragment_bubble" />
+    <fragment
+        android:id="@+id/pie2Fragment"
+        android:name="com.example.android_cjj118.ui.chart.pie.Pie2Fragment"
+        android:label="fragment_pie2"
+        tools:layout="@layout/fragment_pie2" />
+    <fragment
+        android:id="@+id/candleFragment"
+        android:name="com.example.android_cjj118.ui.chart.candle.candleFragment"
+        android:label="fragment_candle"
+        tools:layout="@layout/fragment_candle" />
+    <fragment
+        android:id="@+id/line2Fragment"
+        android:name="com.example.android_cjj118.ui.chart.line.Line2Fragment"
+        android:label="fragment_line2"
+        tools:layout="@layout/fragment_line2" />
+    <fragment
+        android:id="@+id/horizontalBarFragment"
+        android:name="com.example.android_cjj118.ui.chart.horizontalBar.HorizontalBarFragment"
+        android:label="fragment_horizontal_bar"
+        tools:layout="@layout/fragment_horizontal_bar" />
+    <fragment
+        android:id="@+id/radarFragment"
+        android:name="com.example.android_cjj118.ui.chart.radar.RadarFragment"
+        android:label="fragment_radar"
+        tools:layout="@layout/fragment_radar" />
 </navigation>
