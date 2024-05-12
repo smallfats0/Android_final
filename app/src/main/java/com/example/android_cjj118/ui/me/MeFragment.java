@@ -51,6 +51,19 @@ public class MeFragment extends Fragment {
         linearLayout_constellation.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_navigation_me_to_constenllationFragment);
         });
+
+        //从 我的 的界面跳转到 日历 界面
+        LinearLayout linearLayout_calendar = root.findViewById(R.id.linearLayout_cal);
+        linearLayout_calendar.setOnClickListener(v -> {
+            //从 我的 的界面跳转到 日历 界面
+            Navigation.findNavController(v).navigate(R.id.action_navigation_me_to_fullCalendarFragment);
+        });
+
+        //从 我的 的界面跳转到 涂鸦 界面
+        LinearLayout linearLayout_graffiti = root.findViewById(R.id.linearLayout_gra);
+        linearLayout_graffiti.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.action_navigation_me_to_graffitiFragment);
+        });
         return root;
     }
 

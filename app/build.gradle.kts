@@ -86,4 +86,7 @@ dependencies {
     implementation ("com.squareup.okio:okio:2.2.2")
     implementation ("com.google.code.gson:gson:2.8.5")
 
+    // 日历
+    implementation ("com.haibin:calendarview:3.7.1")
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
 }

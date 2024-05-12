@@ -82,6 +82,12 @@
         <action
             android:id="@+id/action_navigation_me_to_constenllationFragment"
             app:destination="@id/constenllationFragment" />
+        <action
+            android:id="@+id/action_navigation_me_to_fullCalendarFragment"
+            app:destination="@id/fullCalendarFragment" />
+        <action
+            android:id="@+id/action_navigation_me_to_graffitiFragment"
+            app:destination="@id/graffitiFragment" />
     </fragment>
     <fragment
         android:id="@+id/pythonFragment"
@@ -202,4 +208,14 @@
         android:name="com.example.android_cjj118.ui.home.fuzhou.FzFragment"
         android:label="fragment_fz"
         tools:layout="@layout/fragment_fz" />
+    <fragment
+        android:id="@+id/fullCalendarFragment"
+        android:name="com.example.android_cjj118.FullCalendarFragment"
+        android:label="fragment_full_calendar"
+        tools:layout="@layout/fragment_full_calendar" />
+    <fragment
+        android:id="@+id/graffitiFragment"
+        android:name="com.example.android_cjj118.ui.me.graffiti.GraffitiFragment"
+        android:label="fragment_graffiti"
+        tools:layout="@layout/fragment_graffiti" />
 </navigation>
