@@ -23,7 +23,10 @@ import com.example.android_cjj118.adapter.ImageAdapter;
 import com.example.android_cjj118.adapter.ImageTitleNumAdapter;
 import com.example.android_cjj118.bean.NewsBean;
 import com.example.android_cjj118.databinding.FragmentHomeBinding;
+import com.scwang.smart.refresh.footer.BallPulseFooter;
+import com.scwang.smart.refresh.header.BezierRadarHeader;
 import com.scwang.smart.refresh.layout.api.RefreshLayout;
+import com.scwang.smart.refresh.layout.constant.SpinnerStyle;
 import com.scwang.smart.refresh.layout.listener.OnLoadMoreListener;
 import com.scwang.smart.refresh.layout.listener.OnRefreshListener;
 import com.youth.banner.Banner;
@@ -76,7 +79,9 @@ public class HomeFragment extends Fragment {
             list.add(R.drawable.error);
         }
         banner.setAdapter(new ImageAdapter(list));
-
+        recyclerView.setAdapter(homeAdapter);
+        refreshLayout.setRefreshHeader(new BezierRadarHeader(getContext()).setEnableHorizontalDrag(true));
+        refreshLayout.setRefreshFooter(new BallPulseFooter(getContext()).setSpinnerStyle(SpinnerStyle.FixedBehind));
         refreshLayout.setOnRefreshListener(layout-> {
             layout.finishRefresh(2000/*,false*/);//传入false表示刷新失败
             getAdList();

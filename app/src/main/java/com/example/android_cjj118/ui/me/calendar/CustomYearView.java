@@ -8,7 +8,7 @@ import com.haibin.calendarview.Calendar;
 import com.haibin.calendarview.YearView;
 
 /**
-* 自定义年视图*/
+ * 自定义年视图*/
 
 public class CustomYearView extends YearView {
     private int mTextPadding;

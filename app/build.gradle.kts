@@ -49,11 +49,15 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     implementation("com.github.AppIntro:AppIntro:6.3.1") // 闪屏页
     implementation("com.github.bumptech.glide:glide:4.16.0")
-    implementation("io.github.scwang90:refresh-layout-kernel:2.1.0")      //核心必须依赖
-    implementation("io.github.scwang90:refresh-header-classics:2.1.0")    //经典刷新头
-    implementation("io.github.scwang90:refresh-footer-ball:2.1.0")        //球脉冲加载
-    implementation("io.github.scwang90:refresh-footer-classics:2.1.0")    //经典加载
-    implementation("io.github.scwang90:refresh-header-material:2.1.0")
+    // 下拉刷新
+    implementation  ("io.github.scwang90:refresh-layout-kernel:2.1.0")     //核心必须依赖
+    implementation  ("io.github.scwang90:refresh-header-classics:2.1.0")    //经典刷新头
+    implementation  ("io.github.scwang90:refresh-header-radar:2.1.0")       //雷达刷新头
+    implementation  ("io.github.scwang90:refresh-header-falsify:2.1.0")     //虚拟刷新头
+    implementation  ("io.github.scwang90:refresh-header-material:2.1.0")   //谷歌刷新头
+    implementation  ("io.github.scwang90:refresh-header-two-level:2.1.0")   //二级刷新头
+    implementation  ("io.github.scwang90:refresh-footer-ball:2.1.0")        //球脉冲加载
+    implementation  ("io.github.scwang90:refresh-footer-classics:2.1.0")    //经典加载
 
     implementation("com.squareup.retrofit2:retrofit:2.11.0") // 网络框架
     implementation("com.squareup.retrofit2:converter-gson:2.11.0") // json转换器

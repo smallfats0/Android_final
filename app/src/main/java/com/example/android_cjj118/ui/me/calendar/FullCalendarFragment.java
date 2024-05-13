@@ -10,9 +10,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.android_cjj118.R;
+import com.example.android_cjj118.base.BaseFragment2;
 import com.haibin.calendarview.Calendar;
 import com.haibin.calendarview.CalendarView;
-import com.example.android_cjj118.base.BaseFragment2;
 
 import java.util.HashMap;
 import java.util.Map;

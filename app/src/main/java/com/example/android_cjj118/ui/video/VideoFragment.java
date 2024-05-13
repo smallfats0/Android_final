@@ -20,6 +20,7 @@ import com.example.android_cjj118.adapter.VideoAdapter;
 import com.example.android_cjj118.bean.VideoBean;
 import com.example.android_cjj118.databinding.FragmentVideoBinding;
 import com.example.android_cjj118.ui.home.HomeViewModel;
+import com.scwang.smart.refresh.header.BezierRadarHeader;
 import com.scwang.smart.refresh.layout.api.RefreshLayout;
 import com.scwang.smart.refresh.layout.listener.OnLoadMoreListener;
 import com.scwang.smart.refresh.layout.listener.OnRefreshListener;
@@ -49,6 +50,7 @@ public class VideoFragment extends Fragment {
             }
 
         });
+        refreshLayout.setRefreshHeader(new BezierRadarHeader(getContext()).setEnableHorizontalDrag(true));
         refreshLayout.setOnLoadMoreListener(new OnLoadMoreListener() {
             @Override
             public void onLoadMore(RefreshLayout refreshlayout) {

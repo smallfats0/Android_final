@@ -210,7 +210,7 @@
         tools:layout="@layout/fragment_fz" />
     <fragment
         android:id="@+id/fullCalendarFragment"
-        android:name="com.example.android_cjj118.FullCalendarFragment"
+        android:name="com.example.android_cjj118.ui.me.calendar.FullCalendarFragment"
         android:label="fragment_full_calendar"
         tools:layout="@layout/fragment_full_calendar" />
     <fragment

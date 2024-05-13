@@ -26,7 +26,12 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         ImageView imageView = findViewById(R.id.imageView);
-        Glide.with(this).load("https://s1.aigei.com/src/img/gif/c4/c4cf89e1562344078ca8d9d8900cc68b.gif?imageMogr2/auto-orient/thumbnail/!282x282r/gravity/Center/crop/282x282/quality/85/%7CimageView2/2/w/282&e=1735488000&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:smun44OF-yX2vtiMlx5cGKs93Bg=").into(imageView);
+        Glide.with(this)
+                .load("https://cdn.acwing.com/media/article/image/2024/05/13/180697_83f1591210-webwxgetmsgimg.jpg")
+                .fitCenter()
+                .override(500, 500) // 指定图片的宽度和高度
+                .into(imageView);
+
         new Handler().postDelayed(() ->{
             if(!isSkip && !isBack){
                 Intent intent = new Intent(SplashActivity.this, MainActivity.class);
