@@ -64,6 +64,12 @@ public class MeFragment extends Fragment {
         linearLayout_graffiti.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_navigation_me_to_graffitiFragment);
         });
+
+        //从 我的 的界面跳转到 翻译 界面
+//        LinearLayout linearLayout_translate = root.findViewById(R.id.linearLayout_translate);
+//        linearLayout_translate.setOnClickListener(v -> {
+//            Navigation.findNavController(v).navigate(R.id.action_navigation_me_to_translateFragment);
+//        });
         return root;
     }
 

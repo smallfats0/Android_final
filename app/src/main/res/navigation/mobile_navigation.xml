@@ -88,6 +88,9 @@
         <action
             android:id="@+id/action_navigation_me_to_graffitiFragment"
             app:destination="@id/graffitiFragment" />
+        <action
+            android:id="@+id/action_navigation_me_to_translateFragment"
+            app:destination="@id/translateFragment" />
     </fragment>
     <fragment
         android:id="@+id/pythonFragment"
@@ -218,4 +221,9 @@
         android:name="com.example.android_cjj118.ui.me.graffiti.GraffitiFragment"
         android:label="fragment_graffiti"
         tools:layout="@layout/fragment_graffiti" />
+    <fragment
+        android:id="@+id/translateFragment"
+        android:name="com.example.android_cjj118.ui.me.translate.TranslateFragment"
+        android:label="fragment_translate"
+        tools:layout="@layout/fragment_translate" />
 </navigation>
