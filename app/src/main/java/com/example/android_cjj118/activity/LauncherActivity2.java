@@ -35,9 +35,7 @@ public class LauncherActivity2 extends AppCompatActivity {
         },1000);
         Glide.with(this)
                 .load("https://cdn.acwing.com/media/article/image/2024/05/13/180697_83f1591210-webwxgetmsgimg.jpg")
-                .centerCrop()
-                .fitCenter()
-                .override(500, 500) // 指定图片的宽度和高度
+                .override(300) // 只指定宽度，高度根据图片比例自动缩放
                 .preload();
 
     }

@@ -70,6 +70,12 @@ public class MeFragment extends Fragment {
 //        linearLayout_translate.setOnClickListener(v -> {
 //            Navigation.findNavController(v).navigate(R.id.action_navigation_me_to_translateFragment);
 //        });
+
+        //从 我的 的界面跳转到 音乐 界面
+        LinearLayout linearLayout_music = root.findViewById(R.id.linearLayout_music);
+        linearLayout_music.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.action_navigation_me_to_musicFragment);
+        });
         return root;
     }
 
