@@ -29,7 +29,7 @@ public class SplashActivity extends AppCompatActivity {
         Glide.with(this)
                 .load("https://cdn.acwing.com/media/article/image/2024/05/13/180697_83f1591210-webwxgetmsgimg.jpg")
                 .fitCenter()
-                .override(300) // 只指定宽度，高度根据图片比例自动缩放
+                .override(500, 500) // 指定图片的宽度和高度
                 .into(imageView);
 
         new Handler().postDelayed(() ->{

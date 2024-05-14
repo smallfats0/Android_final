@@ -16,7 +16,6 @@
         android:icon="@drawable/vedio"
         android:title="@string/title_video" />
 
-
     <item
         android:id="@+id/navigation_me"
         android:icon="@drawable/me"
