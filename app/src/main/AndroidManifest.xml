@@ -64,7 +64,9 @@
             android:name="cn.bmob.v3.util.BmobContentProvider"
             android:authorities="com.example.android_cjj118.BmobContentProvider">
         </provider>
-
+        <service android:name=".ui.me.music.SongService"
+            android:enabled="true"
+            android:exported="false"/>
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="q59JY7vS78BfBzLselzzFf3bt0t8WQl5" />
