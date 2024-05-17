@@ -66,15 +66,21 @@ public class MeFragment extends Fragment {
         });
 
         //从 我的 的界面跳转到 翻译 界面
-//        LinearLayout linearLayout_translate = root.findViewById(R.id.linearLayout_translate);
-//        linearLayout_translate.setOnClickListener(v -> {
-//            Navigation.findNavController(v).navigate(R.id.action_navigation_me_to_translateFragment);
-//        });
+        LinearLayout linearLayout_translate = root.findViewById(R.id.linearLayout_translate);
+        linearLayout_translate.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.action_navigation_me_to_translateFragment);
+        });
 
         //从 我的 的界面跳转到 音乐 界面
         LinearLayout linearLayout_music = root.findViewById(R.id.linearLayout_music);
         linearLayout_music.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_navigation_me_to_musicFragment);
+        });
+
+        // 从 我的 的界面跳转到 九宫格 界面
+        LinearLayout linearLayout_nine = root.findViewById(R.id.linearLayout_playgame);
+        linearLayout_nine.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.action_navigation_me_to_nineFragment);
         });
         return root;
     }

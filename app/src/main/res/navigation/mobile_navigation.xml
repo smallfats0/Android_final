@@ -97,16 +97,19 @@
         <action
             android:id="@+id/action_navigation_me_to_musicFragment"
             app:destination="@id/musicFragment" />
+        <action
+            android:id="@+id/action_navigation_me_to_nineFragment"
+            app:destination="@id/nineFragment" />
     </fragment>
     <fragment
         android:id="@+id/pythonFragment"
         android:name="com.example.android_cjj118.ui.home.python.PythonFragment"
-        android:label="fragment_python"
+        android:label="报课列表"
         tools:layout="@layout/fragment_python" />
     <fragment
         android:id="@+id/webFragment"
         android:name="com.example.android_cjj118.ui.home.web.webFragment"
-        android:label="fragment_web"
+        android:label="加载中"
         tools:layout="@layout/fragment_web" >
         <argument
             android:name="url"
@@ -116,22 +119,22 @@
     <fragment
         android:id="@+id/lineFragment"
         android:name="com.example.android_cjj118.ui.chart.line.LineFragment"
-        android:label="fragment_line"
+        android:label="线图"
         tools:layout="@layout/fragment_line" />
     <fragment
         android:id="@+id/barFragment"
         android:name="com.example.android_cjj118.ui.chart.bar.BarFragment"
-        android:label="fragment_bar"
+        android:label="柱状图"
         tools:layout="@layout/fragment_bar" />
     <fragment
         android:id="@+id/pieFragment"
         android:name="com.example.android_cjj118.ui.chart.pie.PieFragment"
-        android:label="fragment_pie"
+        android:label="饼图"
         tools:layout="@layout/fragment_pie" />
     <fragment
         android:id="@+id/videoDetailFragment"
         android:name="com.example.android_cjj118.ui.video.detail.VideoDetailFragment"
-        android:label="fragment_video_detail"
+        android:label="视频详情"
         tools:layout="@layout/fragment_video_detail" >
         <argument
             android:name="image"
@@ -148,7 +151,7 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.android_cjj118.ui.me.user.LoginFragment"
-        android:label="fragment_login"
+        android:label="注册"
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_loginFragment_to_registerFragment"
@@ -160,86 +163,91 @@
     <fragment
         android:id="@+id/infoFragment"
         android:name="com.example.android_cjj118.ui.me.user.InfoFragment"
-        android:label="fragment_info"
+        android:label="详情"
         tools:layout="@layout/fragment_info" />
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.example.android_cjj118.ui.me.user.RegisterFragment"
-        android:label="fragment_register"
+        android:label="注册"
         tools:layout="@layout/fragment_register" />
     <fragment
         android:id="@+id/findPasswordFragment"
         android:name="com.example.android_cjj118.ui.me.user.findPasswordFragment"
-        android:label="fragment_find_password"
+        android:label="找回密码"
         tools:layout="@layout/fragment_find_password" />
     <fragment
         android:id="@+id/mapFragment"
         android:name="com.example.android_cjj118.ui.me.map.MapFragment"
-        android:label="fragment_map"
+        android:label="百度地图"
         tools:layout="@layout/fragment_map" />
     <fragment
         android:id="@+id/constenllationFragment"
         android:name="com.example.android_cjj118.ui.me.Constenllation.ConstenllationFragment"
-        android:label="fragment_constenllation"
+        android:label="星座"
         tools:layout="@layout/fragment_constenllation" />
     <fragment
         android:id="@+id/bubbleFragment"
         android:name="com.example.android_cjj118.ui.chart.bubble.BubbleFragment"
-        android:label="fragment_bubble"
+        android:label="气泡图"
         tools:layout="@layout/fragment_bubble" />
     <fragment
         android:id="@+id/pie2Fragment"
         android:name="com.example.android_cjj118.ui.chart.pie.Pie2Fragment"
-        android:label="fragment_pie2"
+        android:label="饼图"
         tools:layout="@layout/fragment_pie2" />
     <fragment
         android:id="@+id/candleFragment"
         android:name="com.example.android_cjj118.ui.chart.candle.candleFragment"
-        android:label="fragment_candle"
+        android:label="蜡烛图"
         tools:layout="@layout/fragment_candle" />
     <fragment
         android:id="@+id/line2Fragment"
         android:name="com.example.android_cjj118.ui.chart.line.Line2Fragment"
-        android:label="fragment_line2"
+        android:label="线图"
         tools:layout="@layout/fragment_line2" />
     <fragment
         android:id="@+id/horizontalBarFragment"
         android:name="com.example.android_cjj118.ui.chart.horizontalBar.HorizontalBarFragment"
-        android:label="fragment_horizontal_bar"
+        android:label="水平柱状图"
         tools:layout="@layout/fragment_horizontal_bar" />
     <fragment
         android:id="@+id/radarFragment"
         android:name="com.example.android_cjj118.ui.chart.radar.RadarFragment"
-        android:label="fragment_radar"
+        android:label="雷达图"
         tools:layout="@layout/fragment_radar" />
     <fragment
         android:id="@+id/fzFragment"
         android:name="com.example.android_cjj118.ui.home.fuzhou.FzFragment"
-        android:label="fragment_fz"
+        android:label="十二符咒"
         tools:layout="@layout/fragment_fz" />
     <fragment
         android:id="@+id/fullCalendarFragment"
         android:name="com.example.android_cjj118.ui.me.calendar.FullCalendarFragment"
-        android:label="fragment_full_calendar"
+        android:label="日历"
         tools:layout="@layout/fragment_full_calendar" />
     <fragment
         android:id="@+id/graffitiFragment"
         android:name="com.example.android_cjj118.ui.me.graffiti.GraffitiFragment"
-        android:label="fragment_graffiti"
+        android:label="涂鸦"
         tools:layout="@layout/fragment_graffiti" />
     <fragment
         android:id="@+id/translateFragment"
         android:name="com.example.android_cjj118.ui.me.translate.TranslateFragment"
-        android:label="fragment_translate"
+        android:label="翻译"
         tools:layout="@layout/fragment_translate" />
     <fragment
         android:id="@+id/scoreFragment"
         android:name="com.example.android_cjj118.ui.home.score.ScoreFragment"
-        android:label="fragment_score"
+        android:label="课程评分"
         tools:layout="@layout/fragment_score" />
     <fragment
         android:id="@+id/musicFragment"
         android:name="com.example.android_cjj118.ui.me.music.SongsFragment"
-        android:label="fragment_music"
+        android:label="音乐播放"
         tools:layout="@layout/fragment_music" />
+    <fragment
+        android:id="@+id/nineFragment"
+        android:name="com.example.android_cjj118.ui.me.nine.NineFragment"
+        android:label="fragment_nine"
+        tools:layout="@layout/fragment_nine" />
 </navigation>

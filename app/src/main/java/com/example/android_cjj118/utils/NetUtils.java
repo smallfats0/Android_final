@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class NetUtils {
 
-    // IP
+    // IP地址
 //    http://127.0.0.1:8080/topline/ 电脑 ，手机用10.0.2.2
 //public static final String BASE_URL = "http://10.0.2.2:8080/topline/";
   public static final String BASE_URL = "http://192.168.189.1:8080/topline/";

@@ -151,6 +151,28 @@
                 android:layout_height="match_parent"
                 android:background="#ebebeb" />
 
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ebebeb" />
+
             <LinearLayout
                 android:id="@+id/linearLayout_music"
                 android:layout_width="0dp"
@@ -172,30 +194,55 @@
                     android:text="音乐" />
             </LinearLayout>
 
-<!--            <View-->
-<!--                android:layout_width="1dp"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:background="#ebebeb"/>-->
-<!--            <LinearLayout-->
-<!--                android:id="@+id/linearLayout_translate"-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_weight="1"-->
-<!--                android:gravity="center"-->
-<!--                android:orientation="vertical"-->
-<!--                android:padding="10dp">-->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ebebeb"/>
+            <LinearLayout
+                android:id="@+id/linearLayout_translate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
 
-<!--                <ImageView-->
-<!--                    android:layout_width="30dp"-->
-<!--                    android:layout_height="30dp"-->
-<!--                    android:src="@drawable/translate" />-->
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/translate" />
 
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginTop="5dp"-->
-<!--                    android:text="翻译"/>-->
-<!--            </LinearLayout>-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="翻译"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ebebeb"/>
+            <LinearLayout
+                android:id="@+id/linearLayout_playgame"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/playgame" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="游戏"/>
+            </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

@@ -39,7 +39,7 @@
                 android:ems="10"
                 android:hint="请输入账号"
                 android:inputType="textPersonName"
-                android:drawableStart="@drawable/username_icon"
+                android:drawableStart="@drawable/user_name_icon"
                 />
 
             <EditText
